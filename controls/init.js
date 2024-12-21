@@ -60,7 +60,7 @@ function init() {
 
 
   let loader = new THREE.GLTFLoader();
-  loader.load('https://luminafields.com/micheal.glb', function (gltf) {
+  loader.load('https://luminafieldsnz.github.io/game/micheal.glb', function (gltf) {
     model = gltf.scene;
     scene.add(model);
     model.position.x += 19.6;
@@ -77,7 +77,7 @@ function init() {
   });
 
 
-  loader.load('https://luminafields.com/city.glb', function (gltf) {
+  loader.load('https://luminafieldsnz.github.io/game/city.glb', function (gltf) {
   city = gltf.scene;
   city.scale.set(0, 0, 0); // Adjust the 100 factor as needed
   scene.add(city);
@@ -86,7 +86,7 @@ function init() {
 });
 
 
-loader.load('https://luminafields.com/anya.glb', function (gltf) {
+loader.load('https://luminafieldsnz.github.io/game/anya.glb', function (gltf) {
 anya = gltf.scene;
 scene.add(anya);
 anya.scale.set(.8, .8, .8); // Adjust the 100 factor as needed
@@ -113,7 +113,7 @@ if (gltf.animations) {
 // Perform any additional setup for the city model here
 });
 
-loader.load('https://luminafields.com/FelixGLB.glb', function (gltf) {
+loader.load('https://luminafieldsnz.github.io/game/FelixGLB.glb', function (gltf) {
     felix = gltf.scene;
     scene.add(felix);
     felix.scale.set(.5, .5, .4); // Adjust the size as needed
@@ -135,7 +135,7 @@ loader.load('https://luminafields.com/FelixGLB.glb', function (gltf) {
 });
 
 
-loader.load('https://luminafields.com/crycella.glb', function (gltf) {
+loader.load('https://luminafieldsnz.github.io/game/crycella.glb', function (gltf) {
     crycella = gltf.scene;
     scene.add(crycella);
     crycella.scale.set(.9, .9, .9); // Adjust the 100 factor as needed
@@ -160,7 +160,7 @@ loader.load('https://luminafields.com/crycella.glb', function (gltf) {
 
 
 
-loader.load('https://luminafields.com/knife.glb', function (gltf) {
+loader.load('https://luminafieldsnz.github.io/game/knife.glb', function (gltf) {
   isKnifeLoaded = true;
 knife = gltf.scene;
 scene.add(knife);
@@ -170,7 +170,7 @@ knife.position.x += -8.7;
 // Perform any additional setup for the city model here
 });
 
-loader.load('https://luminafields.com/potion.glb', function (gltf) {
+loader.load('https://luminafieldsnz.github.io/game/potion.glb', function (gltf) {
   potion = gltf.scene;
      potion.scale.set(.2, .2, .2);
      scene.add(potion);
@@ -186,7 +186,7 @@ loader.load('https://luminafields.com/potion.glb', function (gltf) {
 // Perform any additional setup for the city model here
 });
 
-loader.load('https://luminafields.com/altar.glb', function (gltf) {
+loader.load('https://luminafieldsnz.github.io/game/altar.glb', function (gltf) {
     altar = gltf.scene;
     altar.scale.set(2, 2, 2); // Adjust the scale as needed
     scene.add(altar);
@@ -204,7 +204,7 @@ loader.load('https://luminafields.com/altar.glb', function (gltf) {
 });
 
 
-loader.load('https://luminafields.com/gateway.glb', function (gltf) {
+loader.load('https://luminafieldsnz.github.io/game/gateway.glb', function (gltf) {
 gateway = gltf.scene;
 gateway.scale.set(4, 4, 4); // Adjust the 100 factor as needed
 scene.add(gateway);
@@ -224,7 +224,7 @@ gateway.traverse(function (child) {
 
 
 
-loader.load('https://luminafields.com/candles.glb', function (gltf) {
+loader.load('https://luminafieldsnz.github.io/game/candles.glb', function (gltf) {
     candles = gltf.scene;
     candles.scale.set(1, 1, 1); // Adjust the scale as needed
     scene.add(candles);
@@ -246,7 +246,7 @@ loader.load('https://luminafields.com/candles.glb', function (gltf) {
 
 
 
-loader.load('https://luminafields.com/powercaps.glb', function (gltf) {
+loader.load('https://luminafieldsnz.github.io/game/powercaps.glb', function (gltf) {
     let tree = gltf.scene;
     tree.scale.set(9, 9, 9);
     tree.position.set(-10.2, -2.15, 0);
@@ -265,7 +265,7 @@ function addRandomTrees(numberOfTrees) {
     const groundLevelY = 2; // Set this to the elevation where the ground is
 
     for (let i = 0; i < numberOfTrees; i++) {
-        loader.load('https://luminafields.com/tree.glb', function (gltf) {
+        loader.load('https://luminafieldsnz.github.io/game/tree.glb', function (gltf) {
             let tree = gltf.scene;
             tree.scale.set(9, 9, 9);
 
@@ -291,7 +291,7 @@ addRandomTrees(3);
 
 
 
-loader.load('https://luminafields.com/building1.glb', function (gltf) {
+loader.load('https://luminafieldsnz.github.io/game/building1.glb', function (gltf) {
 building1 = gltf.scene;
 building1.scale.set(12, 12, 12); // Adjust the 100 factor as needed
 scene.add(building1);
@@ -303,7 +303,7 @@ building1.rotation.y = 825;
 // Perform any additional setup for the city model here
 });
 
-loader.load('https://luminafields.com/hobbitmountain.glb', function (gltf) {
+loader.load('https://luminafieldsnz.github.io/game/hobbitmountain.glb', function (gltf) {
 hobbitmountain = gltf.scene;
 hobbitmountain.scale.set(25, 25, 25); // Adjust the 100 factor as needed
 scene.add(hobbitmountain);
