@@ -43,7 +43,7 @@ let distanceBoss;
 
 
 
-loader.load('https://the-profane.com/red.glb', function (gltf) {
+loader.load('https://luminafields.com/red.glb', function (gltf) {
     dragon_boss = gltf.scene;
     scene.add(dragon_boss);
     dragon_boss.scale.set(1.2, 1.2, 1.2);
@@ -62,7 +62,7 @@ loader.load('https://the-profane.com/red.glb', function (gltf) {
 });
 
 
-loaderBoss2.load('https://the-profane.com/monster2.glb', function (gltf) {
+loaderBoss2.load('https://luminafields.com/monster2.glb', function (gltf) {
     dragon_boss1 = gltf.scene;
     scene.add(dragon_boss1);
     dragon_boss1.scale.set(1, 1, 1);

@@ -179,7 +179,7 @@ if (potionAmountNum < 1) return;
 
 
 function growPowercap() {
-    loader.load('https://the-profane.com/powercaps.glb', function (gltf) {
+    loader.load('https://luminafields.com/powercaps.glb', function (gltf) {
         let powercap = gltf.scene;
         powercap.scale.set(0.1, 0.1, 0.1); // Start small
 
