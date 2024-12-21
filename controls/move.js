@@ -104,28 +104,8 @@ trackCircleMovement(e.clientX, e.clientY);
   
 
 
-  function updateAnyaPosition(screenX, screenY) {
-      worldPosition = screenToWorld(screenX, screenY, camera, plane);
-      if (worldPosition) {
-          moveAnyaToPosition(worldPosition);
-      }
-  }
 
 
-
-  function screenToWorld(x, y, camera, plane) {
-      let mouse = new THREE.Vector2();
-      mouse.x = (x / window.innerWidth) * 2 - 1;
-      mouse.y = -(y / window.innerHeight) * 2 + 1;
-
-      let raycaster = new THREE.Raycaster();
-      raycaster.setFromCamera(mouse, camera);
-
-      // Assuming 'plane' is a THREE.Plane object positioned in the world
-      let target = new THREE.Vector3();
-      raycaster.ray.intersectPlane(plane, target);
-      return target;
-  }
 
 
 

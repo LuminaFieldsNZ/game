@@ -222,10 +222,7 @@ function updateScene() {
   updateHeadTracking();
   checkCollision();
   updateDragonBehavior();
-  updateDragonBehavior1();
   checkCollision2();
-  checkCollision3(); // Check for collisions if not chasing
-  handleDragonState(); // Handle the current state of the dragon
 
 
   if (hitpoints <= 0) {
