@@ -216,9 +216,6 @@ function checkDistanceAndTriggerActions() {
 
 
 function updateScene() {
-  countEmojisAndUpdate();
-  countEmotionKeywordsAndUpdate();
-  countKeywordsForNationsAndUpdate();
   updateFelixBehavior();
   updateStats();
   checkDistanceAndTriggerActions();
